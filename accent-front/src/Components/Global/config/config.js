@@ -1,3 +1,3 @@
 module.exports = {
-    backURL: "http://accentagency.com/test",
+    backURL: "http://accentagencia.com/test",
 };
