@@ -57,6 +57,10 @@ footer{
     color: #fff;
 }
 
+.footer-bottom .social-links a:hover {
+    color: #efc90a;
+}
+
 @media (min-width: 768px) and (max-width: 1024px){
 
     .footer-bottom .social-links a {

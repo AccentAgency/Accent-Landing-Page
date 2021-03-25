@@ -6,6 +6,7 @@ import './css/LandigWeb.css';
 
 import logo  from'./images/logo.svg';
 import { Component } from 'react';
+import { Link } from 'react-scroll';
 
 
 class Header extends Component {
@@ -30,6 +31,7 @@ class Header extends Component {
         });
 
     }
+    
 
     handleClose(){
         this.setState({
@@ -70,13 +72,15 @@ class Header extends Component {
 
                         <nav id="navbar" className={`navbar ${isExpanded ? "navbar-mobile" : ""}`}>
                             <ul>
-                                <li><a href="#RedesSociales" onClick={this.handleClose}>REDES SOCIALES<i className="bi bi-chevron-down"></i></a>
+                                <li><Link activeClass="active" to="RedesSociales" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>REDES SOCIALES
+                                <i className="bi bi-chevron-down"></i></Link>
                                 </li>
-                                <li><a href="#Web" onClick={this.handleClose}>DISEÑO WEB</a>
+                                <li><Link activeClass="active" to="Web" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>DISEÑO WEB</Link>
                                 </li>
-                                <li><a href="#Ecommerce" onClick={this.handleClose}>ECOMMERCE</a>
+                                <li><Link activeClass="active" to="Ecommerce" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>ECOMMERCE</Link>
                                 </li>
-                                <li><a className="nav-link scrollto" href="#Embajador" onClick={this.handleClose}>EMABAJADOR</a>
+                                <li><Link activeClass="active" className="nav-link scrollto" to="Embajador" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>
+                                    EMABAJADOR</Link>
                                 </li>
                                 <li>
                                     <div className="social-links">

@@ -50,6 +50,7 @@ body {
     background: #fff;
     color: #666666;
     font-family: "CarmenSansRegular", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -62,6 +63,19 @@ body {
     transition: all 0.5s;
     z-index: 997;
     background: rgba(52, 59, 64, 0.9);
+}
+
+#header a {
+    color: #fff;
+    cursor: pointer;
+}
+
+#header a:hover{
+    color: #efc90a;
+}
+
+#header .active{
+    color: #efc90a !important;
 }
 
 .align-items-center {
@@ -230,6 +244,10 @@ body {
     background: rgba(77, 77, 77, 0.9);
     transition: 0.3s;
     z-index: 999;
+}
+
+.navbar-mobile a{
+    color: #666666 !important;
 }
 
 .navbar-mobile ul {
@@ -547,8 +565,16 @@ main{
 }
 
 .header-scrolled a{
-    color: #82039A;
+    color: #82039A !important;
     font-family: 'CarmenSansSemiBold';
+}
+
+.header-scrolled .active{
+    color: #82039A;
+}
+
+.header-scrolled a:hover{
+    color: #efc90a !important;
 }
 
 .header-scrolled img{
@@ -559,6 +585,10 @@ main{
 /* REDES SOCIALES */
 #RedesSociales{
     margin-top: 20%;
+}
+
+#RedesSociales .tab-content{
+    margin-top: 20px;
 }
 
 .tarjeta-card{
@@ -817,6 +847,14 @@ main{
     margin-top: 20%;
 }
 
+#cont{
+    margin-top: 60px;
+}
+
+#Ecommerce .about-container{
+    margin-top: 10px;
+}
+
 .Contenedor-page{
     height: 640px;
     background-position: top center;
@@ -937,10 +975,15 @@ main{
 
 /*MOVILES*/
 
+
 @media (min-width: 375px) and (max-width: 500px){
 
     #contMobile{
         display: block;
+    }
+
+    #cont{
+        margin-top: 0px;
     }
 
     .banner_web{
@@ -959,6 +1002,7 @@ main{
         background-image: url(../images/banner/cell-embajador.png) !important;
         height: 90vh !important;
     }
+    
 
     .logoAccent {
         width: 150px;
@@ -987,13 +1031,25 @@ main{
     }
 
     #hero{
-       height: 70vh;
+       height: 80vh;
        margin-bottom: 60px;
+    }
+
+    #Embajador #hero{
+        margin-bottom: 0px !important;
+    }
+
+    #Embajador #about{
+        margin-top: -30%;
     }
 
     .banner button{
         font-size: 15px;
-        bottom: 15%;
+        bottom: 8%;
+    }
+
+    #Embajador .banner button{
+        bottom: 25%;
     }
 
     #contMobile .diULVL{
@@ -1004,7 +1060,7 @@ main{
         width: 80%;
         text-align: center;
         left: 10%;
-        bottom: 30%;
+        bottom: 20%;
     }
 
     h2{
@@ -1043,12 +1099,13 @@ main{
     }
 
     .tarjeta-img{
-        height: 250px !important;
+        height: 280px !important;
         margin-top: 0%;
+        padding: 0px;
     }
 
     .Contenedor-page {
-        height: 250px;
+        height: 280px;
     }
 
     .imagen_socialMedia{
@@ -1123,11 +1180,16 @@ main{
     }
 
     .tarjeta-card{
-        height: 370px;
+        height: 380px;
+        margin-top: 0px;
+    }
+
+    #RedesSociales .kPyZtq{
+        margin-top: 0px;
     }
 
     .Contenedor{
-        height: 370px;
+        height: 380px;
     }
 
 
@@ -1140,6 +1202,19 @@ main{
         height: 20px;
         line-height: 20px;
         margin-left: 15px;
+    }
+
+    .pagina1{
+        background-image: url('../images/Ecommerce/Telefono/paginaTlf-1.png') !important;
+    }
+
+    
+    .pagina2{
+        background-image: url('../images/Ecommerce/Telefono/paginaTlf-2.png') !important;
+    }
+
+    .pagina3{
+        background-image: url('../images/Ecommerce/Telefono/paginaTlf-3.png') !important;
     }
 
     .Servicios{
@@ -1155,11 +1230,16 @@ main{
     }
 
     #cont .hoBRNn{
-        height: 250px !important;
+        height: 280px !important;
+        margin: 0px !important;
+    }
+
+    #cont .cukhLH {
+        margin: 0px !important;
     }
 
     #cont .galrjd{
-        height: 250px !important;
+        height: 300px !important;
     }
 
     .footer-bottom .social-links a {
@@ -1632,7 +1712,11 @@ main{
         width: 100%;
         text-align: center;
     }
+
+
 }
+
+
 
 @media (min-width: 768px) and (max-width: 800px){
     .imagen_socialMedia {

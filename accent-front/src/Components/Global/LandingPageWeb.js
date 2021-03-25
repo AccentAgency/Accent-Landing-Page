@@ -15,6 +15,7 @@ import * as emailjs from 'emailjs-com';
 
 
 
+
 import logo from './images/RedesSociales/logo.png';
 
 //Banner
@@ -29,6 +30,11 @@ import pagina4 from './images/PaginaWeb/Pagina4.png';
 import pagina5 from './images/PaginaWeb/Pagina5.png';
 import pagina6 from './images/PaginaWeb/Pagina6.png';
 import pagina7 from './images/PaginaWeb/Pagina7.png';
+
+import paginaTlf from './images/PaginaWeb/Telefono/PaginaTlf-1.png';
+import paginaTlf2 from './images/PaginaWeb/Telefono/PaginaTlf-2.png';
+import paginaTlf3 from './images/PaginaWeb/Telefono/PaginaTlf-3.png';
+import paginaTlf4 from './images/PaginaWeb/Telefono/PaginaTlf-4.png';
 
 //Imagenes Red social
 import social1 from './images/RedesSociales/social1.png';
@@ -45,6 +51,11 @@ import $ from 'jquery';
 import ecommerce1 from './images/Ecommerce/pagina1.png';
 import ecommerce2 from './images/Ecommerce/pagina2.png';
 import ecommerce3 from './images/Ecommerce/pagina3.png';
+
+import ecommerce1_tlf from './images/Ecommerce/Telefono/paginaTlf-1.png';
+import ecommerce2_tlf from './images/Ecommerce/Telefono/paginaTlf-2.png';
+import ecommerce3_tlf from './images/Ecommerce/Telefono/paginaTlf-3.png';
+
 import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -373,28 +384,28 @@ class LandingPageWeb extends Component {
 
                                         <ItemMob className="MovilPos">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${pagina6})`}}>
+                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf3})`}}>
                                                 </div>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${pagina7})`}}>
+                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf4})`}}>
                                                 </div>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${pagina4})`}}>
+                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf})`}}>
                                                 </div>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${pagina5})`}}>
+                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf2})`}}>
                                                 </div>
                                             </div>
                                         </ItemMob>
@@ -691,21 +702,21 @@ class LandingPageWeb extends Component {
                                     <Slider className="" breakPoints={breakPoints}>
                                         <ItemImg className="PapaJhons">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-page" style={{backgroundImage:`url(${ecommerce1})`}}>
+                                                <div className="Contenedor-page pagina1" style={{backgroundImage:`url(${ecommerce1})`}}>
                                                 </div>
                                             </div>
                                         </ItemImg>
 
                                         <ItemImg className="MovilPos">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-page" style={{backgroundImage:`url(${ecommerce2})`}}>
+                                                <div className="Contenedor-page pagina2" style={{backgroundImage:`url(${ecommerce2})`}}>
                                                 </div>
                                             </div>
                                         </ItemImg>
 
                                         <ItemImg className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-page" style={{backgroundImage:`url(${ecommerce3})`}}>
+                                                <div className="Contenedor-page pagina3" style={{backgroundImage:`url(${ecommerce3})`}}>
                                                 </div>
                                             </div>
                                         </ItemImg>
