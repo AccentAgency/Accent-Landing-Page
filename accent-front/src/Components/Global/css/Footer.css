@@ -1,0 +1,75 @@
+footer{
+    margin-top: 20%;
+    background-color: #4d4d4d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-bottom h3{
+    color: #fff;
+    font-family: 'CarmenSansBold';
+}
+
+.footer-bottom p{
+    color: #cccccc;
+    font-family: 'CarmenSansLight';
+}
+
+#fila_footer{
+    margin-top: 4%;
+    color: #cccccc;
+}
+
+#fila_footer h4{
+    font-family: 'CarmenSansSemiBold';
+    color: #fff;
+}
+
+.col-md-8{
+    width: 66.666667%;
+    float: left;
+}
+
+.footer-bottom .social-links a{
+    font-size: 40px;
+    margin-left: 28px;
+}
+
+.footer-bottom .social-links{
+    margin-left: 0%;
+    text-align: right;
+    float: right;
+}
+
+.col-md-3{
+    width: 25%;
+    float: left;
+}
+
+.col-md-12{
+    float: left;
+}
+
+.copyright-bar{
+    padding-top: 45px;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .footer-bottom .social-links a {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    #fila_footer h4 {
+        font-size: 15px;
+    }
+
+    #footer-det{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
