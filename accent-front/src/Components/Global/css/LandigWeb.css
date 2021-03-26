@@ -1036,6 +1036,11 @@ main{
         display: block;
     }
 
+    .centrado img{
+        width: 180px !important;
+    }
+
+
     #cont{
         margin-top: 0px;
     }
@@ -1411,6 +1416,11 @@ main{
         background-image: url(../images/banner/cell3.png) !important;
     }
 
+    
+    .centrado img{
+        width: 130px !important;
+    }
+
     .banner_social{
         background-image: url(../images/banner/cell-redes.png) !important;
     }
@@ -1435,6 +1445,7 @@ main{
     }
     .mobile-nav-toggle{
         height: 24px;
+        padding-top: 15px;
     }
 
     .social-links {
@@ -1446,7 +1457,15 @@ main{
     }
 
     #hero{
-       height: 70vh;
+       height: 80vh;
+    }
+
+    .logoAccent {
+        width: 90px;
+    }
+
+    #header{
+        height: 50px;
     }
 
     .banner button{
@@ -1456,6 +1475,7 @@ main{
     #hero h2{
         width: 48%;
         text-align: center;
+        left: 27% !important;
     }
 
     h2{
@@ -2093,3 +2113,27 @@ main{
 
 
 
+.centrado{
+    
+    position: fixed;
+    z-index: 25000;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+
+}
+
+.centrado img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 250px;
+}
+
+  
