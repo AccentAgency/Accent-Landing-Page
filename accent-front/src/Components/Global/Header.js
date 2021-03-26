@@ -89,7 +89,7 @@ class Header extends Component {
                                         <a href="https://instagram.com/accentagency.ve?igshid=zgl7co1crmeb" target="_blank" rel="noopener noreferrer" className="instagram">
                                             <i className="fa fa-instagram"></i></a>
                                         <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="twitter"><i className="fa fa-twitter"></i></a>
-                                        <a href="https://api.whatsapp.com/send?phone=584126917617&text=Hola,%20Accent%20estoy%20interesado%20en%20su%20servicio." 
+                                        <a href="https://wa.me/message/RHJ4Q3JG5RSPN1" 
                                             target="_blank" rel="noopener noreferrer" className="instagram">
                                             <i className="fa fa-whatsapp"></i></a>
                                     </div>

@@ -13,8 +13,7 @@ import axios from "axios";
 import swal from 'sweetalert';
 import * as emailjs from 'emailjs-com';
 
-
-
+import ReactImageAppear from 'react-image-appear';
 
 import logo from './images/RedesSociales/logo.png';
 
@@ -52,9 +51,6 @@ import ecommerce1 from './images/Ecommerce/pagina1.png';
 import ecommerce2 from './images/Ecommerce/pagina2.png';
 import ecommerce3 from './images/Ecommerce/pagina3.png';
 
-import ecommerce1_tlf from './images/Ecommerce/Telefono/paginaTlf-1.png';
-import ecommerce2_tlf from './images/Ecommerce/Telefono/paginaTlf-2.png';
-import ecommerce3_tlf from './images/Ecommerce/Telefono/paginaTlf-3.png';
 
 import Footer from './Footer';
 import AOS from 'aos';
@@ -106,7 +102,7 @@ class LandingPageWeb extends Component {
     constructor(props)
     {
         super(props);
-        this.state={name:'',email:'',phone:'', tipoForm:'',
+        this.state={name:'',email:'',phone:'', tipoForm:'', display:'none',
             open: false,
             errors: {
                 name:'',
@@ -219,11 +215,13 @@ class LandingPageWeb extends Component {
         }
         else{
             if(validateForm(this.state.errors)) {
+                this.setState({display:'flex'});
                 axiosInstance.post('/sendLanding'+this.state.tipoForm, {
                     'name' : this.state.name,
                     'email': this.state.email,
                     'phone': this.state.phone
                 }).then(res => {
+                    this.setState({display:'none'});
                     swal('¡Gracias por elegir Accent!', 'Pronto nos estaremos comunicando contigo', 'success');
                     this.setState({...this.state.open, open:false});
                     let templateParams = {
@@ -236,11 +234,12 @@ class LandingPageWeb extends Component {
                     this.resetForm();
 
                 }).catch(error => {
-                    alert(error);
+                    this.setState({display:'none'});
                     swal('Ha ocurrido un error', 'Favor intente nuevamente', 'warning');
                 })
             }
             else{
+                this.setState({display:'none'});
                 swal('Formulario Incompleto', 'Verifique que no exista campo de advertencia antes de enviar su solicitud', 'warning');
             }
         }
@@ -267,6 +266,9 @@ class LandingPageWeb extends Component {
         return(
             <div className="">
                 <Header></Header>
+                <div class="loader-page" style={{display: this.state.display}}>
+                    <div class="lds-ripple"><div></div><div></div></div>
+                </div>
                 <div className="whatsapp">
                     <a href="https://api.whatsapp.com/send?phone=584126917617&text=Hola,%20Accent%20estoy%20interesado%20en%20su%20servicio." 
                         className="float" target="_blank" rel="noopener noreferrer">
@@ -336,19 +338,19 @@ class LandingPageWeb extends Component {
                                 <div className="container-accent">
                                     <div id="Pagina1" className="portafolio col-md-4">
                                         <div className="card">
-                                            <img src={pagina1} alt="pagina"></img>
+                                            <ReactImageAppear placeholderClass="imagen" src={pagina1} alt="pagina" animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
 
                                     <div id="Pagina2" className="portafolio col-md-4">
                                         <div className="card">
-                                            <img src={pagina6} alt="pagina-2"></img>
+                                            <ReactImageAppear placeholderClass="imagen" src={pagina6} alt="pagina-2"  animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
 
                                     <div id="Pagina3" className="portafolio col-md-4">
                                         <div className="card">
-                                            <img src={pagina7} alt="pagina-3"></img>
+                                            <ReactImageAppear placeholderClass="imagen" src={pagina7} alt="pagina-3" animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
                                 </div>
@@ -357,13 +359,13 @@ class LandingPageWeb extends Component {
                                 <div className="container-accent">
                                     <div id="Pagina1" className="portafolio col-md-5 offset-md-1">
                                         <div className="card2">
-                                            <img src={pagina4} alt="pagina-4"></img>
+                                            <ReactImageAppear placeholderClass="imagen" src={pagina4} alt="pagina-4" animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
 
                                     <div id="Pagina2" className="portafolio col-md-5 offset-md-accent">
                                         <div className="card2">
-                                            <img src={pagina5} alt="pagina-5"></img>
+                                            <ReactImageAppear placeholderClass="imagen" src={pagina5} alt="pagina-5" animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
 
@@ -753,7 +755,7 @@ class LandingPageWeb extends Component {
                                         <div className="card-1">
                                             <div id="Ingresos" className="card-embj">
                                                 <div className="icono">
-                                                    <img className="" src={icono01} alt="ingresos"></img>
+                                                    <ReactImageAppear placeholderClass="imagen" className="" src={icono01} alt="ingresos" animationDuration="1s"></ReactImageAppear>
                                                 </div>
                                                 <div className="text-info">
                                                     <h3>Incrementa tus ingresos</h3>
@@ -767,7 +769,7 @@ class LandingPageWeb extends Component {
                                         <div className="card-1">
                                             <div id="Oportunidad" className="card-embj">
                                                 <div className="icono">
-                                                    <img className="" src={icono02} alt="ingresos"></img>
+                                                    <ReactImageAppear placeholderClass="imagen" className="" src={icono02} alt="ingresos" animationDuration="1s"></ReactImageAppear>
                                                 </div>
                                                 <div className="text-info">
                                                     <h3>Oportunidad de comercializar nuestros productos digitales</h3>
@@ -782,7 +784,7 @@ class LandingPageWeb extends Component {
                                         <div className="card-1">
                                             <div id="Empresarial" className="card-embj">
                                                 <div className="icono">
-                                                    <img className="" src={icono03} alt="ingresos"></img>
+                                                    <ReactImageAppear placeholderClass="imagen" src={icono03} alt="ingresos" animationDuration="1s"></ReactImageAppear>
                                                 </div>
                                                 <div className="text-info">
                                                     <h3>Desarrollo empresarial constante como embajador de Accent</h3>
