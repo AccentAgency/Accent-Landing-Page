@@ -23,7 +23,7 @@ function Footer() {
                                 <div className="social-links">
                                     <a href="https://www.facebook.com/Accent-Digital-Agency-110173624447682" target="_blank" rel="noopener noreferrer" className="facebook">
                                         <i className="fa fa-facebook"></i></a>
-                                    <a href="https://instagram.com/accentagency.ve?igshid=zgl7co1crmeb" target="_blank" rel="noopener noreferrer" className="instagram">
+                                    <a href="https://instagram.com/accentagencia.ve?igshid=z7kjac68o5vb" target="_blank" rel="noopener noreferrer" className="instagram">
                                         <i className="fa fa-instagram"></i></a>
                                     <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="twitter"><i className="fa fa-twitter"></i></a>
                                     <a href="https://wa.me/message/RHJ4Q3JG5RSPN1" 
