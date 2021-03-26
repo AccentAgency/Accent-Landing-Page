@@ -16,10 +16,10 @@ class App extends Component {
     setTimeout(
         function() {
             this.setState({ loading: false });
-            $("body").fadeIn(8000);
+            $("body").fadeIn(5100);
         }
         .bind(this),
-        3000
+        5000
     );
   }
 
