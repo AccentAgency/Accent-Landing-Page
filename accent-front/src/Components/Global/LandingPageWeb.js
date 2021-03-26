@@ -14,7 +14,7 @@ import swal from 'sweetalert';
 import * as emailjs from 'emailjs-com';
 
 import ReactImageAppear from 'react-image-appear';
-
+import { BackgroundImage } from 'react-image-and-background-image-fade'
 import logo from './images/RedesSociales/logo.png';
 
 //Banner
@@ -379,36 +379,36 @@ class LandingPageWeb extends Component {
                                     <Slider className="" breakPoints={breakPoints}>
                                         <ItemMob className="PapaJhons">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${pagina1})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-mobile" src = {pagina1} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="MovilPos">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf3})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-mobile" src={paginaTlf3} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf4})`}}>
-                                                </div>
+                                            <BackgroundImage className="Contenedor-mobile" src= {paginaTlf4} lazyLoad>
+                                            </BackgroundImage>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-mobile" src={paginaTlf} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemMob>
 
                                         <ItemMob className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-mobile" style={{backgroundImage:`url(${paginaTlf2})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-mobile" src= {paginaTlf2} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemMob>
                                     </Slider>
@@ -704,22 +704,22 @@ class LandingPageWeb extends Component {
                                     <Slider className="" breakPoints={breakPoints}>
                                         <ItemImg className="PapaJhons">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-page pagina1" style={{backgroundImage:`url(${ecommerce1})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-page pagina1" src={ecommerce1} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemImg>
 
                                         <ItemImg className="MovilPos">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-page pagina2" style={{backgroundImage:`url(${ecommerce2})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-page pagina2" src ={ecommerce2} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemImg>
 
                                         <ItemImg className="CPV">
                                             <div className="col-md-12 col-sm-12 tarjeta-img">
-                                                <div className="Contenedor-page pagina3" style={{backgroundImage:`url(${ecommerce3})`}}>
-                                                </div>
+                                                <BackgroundImage className="Contenedor-page pagina3" src ={ecommerce3} lazyLoad>
+                                                </BackgroundImage>
                                             </div>
                                         </ItemImg>
                                     </Slider>

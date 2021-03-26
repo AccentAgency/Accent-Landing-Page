@@ -604,8 +604,8 @@ main{
 
 .imagen_socialMedia{
     float: right;
-    width: 550px;
-    height: 100%;
+    width: 530px;
+    height: 440px;
     border-radius: 0px 40px 40px 0px;
     background-size: cover;
     background-position: center;
@@ -1390,12 +1390,17 @@ main{
         margin-top: 80px;
         text-align: center;
         align-items: center;
+        float: none;
     }
 
     .comentario{
         font-size: 20px;
         width: 100%;
         text-align: center;
+    }
+
+    #three{
+        margin-bottom: 50px;
     }
 }
 
