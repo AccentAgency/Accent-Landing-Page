@@ -127,11 +127,6 @@ class LandingPageWeb extends Component {
         });
     }
 
-    initializeReactGA () { 
-        ReactGA.initialize ('G-0639NNB5RK'); 
-        ReactGA.pageview('/'); 
-    }
-
     handleClose(){
         this.setState({...this.state.open, open:false});
     }
@@ -277,6 +272,11 @@ class LandingPageWeb extends Component {
             phone:'',
             tipoForm:''
         })
+    }
+
+    initializeReactGA () { 
+        ReactGA.initialize ('G-0639NNB5RK'); 
+        ReactGA.pageview('/'); 
     }
 
     componentDidMount = () =>{
