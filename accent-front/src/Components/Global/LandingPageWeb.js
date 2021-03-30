@@ -287,8 +287,8 @@ class LandingPageWeb extends Component {
         return(
             <div className="">
                 <Header></Header>
-                <div class="loader-page" style={{display: this.state.display}}>
-                    <div class="lds-ripple"><div></div><div></div></div>
+                <div className="loader-page" style={{display: this.state.display}}>
+                    <div className="lds-ripple"><div></div><div></div></div>
                 </div>
                 <div className="whatsapp">
                     <a href="https://api.whatsapp.com/send?phone=584244052247&text=Hola,%20Accent%20estoy%20interesado%20en%20su%20servicio." 
