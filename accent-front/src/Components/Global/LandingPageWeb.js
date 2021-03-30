@@ -13,6 +13,7 @@ import axios from "axios";
 import swal from 'sweetalert';
 import * as emailjs from 'emailjs-com';
 
+
 import ReactImageAppear from 'react-image-appear';
 import { BackgroundImage } from 'react-image-and-background-image-fade'
 import logo from './images/RedesSociales/logo.png';
@@ -102,7 +103,7 @@ class LandingPageWeb extends Component {
     constructor(props)
     {
         super(props);
-        this.state={name:'',email:'',phone:'', tipoForm:'', display:'none',
+        this.state={name:'',email:'',phone:'', tipoForm:'', display:'none', form:'Seleccione servicio interesado',
             open: false,
             errors: {
                 name:'',
@@ -114,6 +115,16 @@ class LandingPageWeb extends Component {
         this.handleForm = this.handleForm.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSelect = this.handleSelect.bind(this);
+    }
+
+    handleSelect(event){
+        const target = event.target;
+        const val = event.target.value;
+        const name = target.name;
+        this.setState({
+            [name]: val
+        });
     }
 
     handleClose(){
@@ -122,7 +133,7 @@ class LandingPageWeb extends Component {
 
     handleForm(value){
         this.setState({...this.state.open, open:true});
-        this.setState({...this.state.tipoForm, tipoForm:value});
+        this.setState({...this.state.form, form:value});
     }
 
     
@@ -200,14 +211,23 @@ class LandingPageWeb extends Component {
         e.preventDefault();
         var servicio = '';
 
-        if(this.state.tipoForm === "Web"){
-            servicio = "Página Web";
+        if(this.state.form === "Página Web"){
+            servicio = "Web";
         }
-        else if(this.state.tipoForm === "Social"){
-            servicio = "Redes Sociales";
+        else if(this.state.form === "Redes Sociales"){
+            servicio = "Social";
         }
-        else if(this.state.tipoForm === "Ecommerce"){
-            servicio = "Pagina de Ecommerce";
+        else if(this.state.form === "Página de Ecommerce"){
+            servicio = "Ecommerce";
+        }
+        else if (this.state.form === "Embajador"){
+            servicio = "Embajador";
+        }
+        else if (this.state.form === "Fotografía"){
+            servicio = "Fotografia";
+        }
+        else{
+            servicio = "Todos";
         }
 
         if(!this.state.name || !this.state.email || !this.state.phone){
@@ -216,7 +236,7 @@ class LandingPageWeb extends Component {
         else{
             if(validateForm(this.state.errors)) {
                 this.setState({display:'flex'});
-                axiosInstance.post('/sendLanding'+this.state.tipoForm, {
+                axiosInstance.post('/sendLanding'+servicio, {
                     'name' : this.state.name,
                     'email': this.state.email,
                     'phone': this.state.phone
@@ -226,7 +246,7 @@ class LandingPageWeb extends Component {
                     this.setState({...this.state.open, open:false});
                     let templateParams = {
                         from_name: this.state.name,
-                        servicio: servicio,
+                        servicio: this.state.form,
                         phone: this.state.phone,
                         email: this.state.email
                     }
@@ -270,10 +290,16 @@ class LandingPageWeb extends Component {
                     <div class="lds-ripple"><div></div><div></div></div>
                 </div>
                 <div className="whatsapp">
-                    <a href="https://api.whatsapp.com/send?phone=584126917617&text=Hola,%20Accent%20estoy%20interesado%20en%20su%20servicio." 
+                    <a href="https://api.whatsapp.com/send?phone=584244052247&text=Hola,%20Accent%20estoy%20interesado%20en%20su%20servicio." 
                         className="float" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-whatsapp my-float"></i>
                     </a>
+                </div>
+
+                <div className="float-inf">
+                    <div className="" target="_blank" rel="noopener noreferrer" onClick={this.handleForm.bind(this, "Todas los servicios")}>
+                        <i className="fa fa-info my-float"></i>
+                    </div>
                 </div>
 
                 
@@ -308,6 +334,19 @@ class LandingPageWeb extends Component {
                                 <span className='error'>{errors.phone}</span>}
                             </div>
 
+                            <div className="form-group">
+                                <select name="form" className="formControl" value={this.state.form} onChange={this.handleSelect}>
+                                    <option>Seleccione servicio interesado</option>
+                                    <option>Página Web</option>
+                                    <option>Redes Sociales</option>
+                                    <option>Página de Ecommerce</option>
+                                    <option>Embajador</option>
+                                    <option>Fotografía</option>
+                                    <option>Todas los servicios</option>
+                                </select>
+
+                            </div>
+
                             <button className="btn_form">ENVIAR</button>
                             
                         </form>
@@ -323,7 +362,7 @@ class LandingPageWeb extends Component {
                                     <h2><b>Muéstrale a tus clientes</b> la información que necesitan de una forma <b>más profesional.</b></h2>
                                 </div>
                             </article>
-                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Web")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
+                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Página Web")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
                     </div>
 
@@ -434,7 +473,7 @@ class LandingPageWeb extends Component {
                                     <h2><b>Atrae más clientes</b>a través de tus <b>redes sociales.</b></h2>
                                 </div>
                             </article>
-                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Social")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
+                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Redes Sociales")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
                     </section>
       
@@ -692,7 +731,7 @@ class LandingPageWeb extends Component {
                                 <div className="texto">
                                 </div>
                             </article>
-                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Ecommerce")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
+                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Página de Ecommerce")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
                     </section>
             

@@ -72,10 +72,10 @@ class Header extends Component {
 
                         <nav id="navbar" className={`navbar ${isExpanded ? "navbar-mobile" : ""}`}>
                             <ul>
+                                <li><Link activeClass="active" to="Web" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>DISEÑO WEB</Link>
+                                </li>
                                 <li><Link activeClass="active" to="RedesSociales" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>REDES SOCIALES
                                 <i className="bi bi-chevron-down"></i></Link>
-                                </li>
-                                <li><Link activeClass="active" to="Web" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>DISEÑO WEB</Link>
                                 </li>
                                 <li><Link activeClass="active" to="Ecommerce" onClick={this.handleClose} spy={true} smooth={true} duration={1000}>ECOMMERCE</Link>
                                 </li>

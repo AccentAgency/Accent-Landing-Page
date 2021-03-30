@@ -78,4 +78,36 @@ router.post('/sendLandingEcommerce', async (req, res) => {
     res.json(result);
  });
 
+ router.post('/sendLandingFotografia', async (req, res) => {
+    const {name,email,phone} = req.body;
+ 
+    var f = new Date();
+    var fecha = f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+ 
+    const result = db.database().ref("UsersFotografia").push({
+        Nombre:name,
+        Email: email,
+        Telefono: phone,
+        Fecha: fecha
+    })
+ 
+    res.json(result);
+ });
+
+ router.post('/sendLandingTodos', async (req, res) => {
+    const {name,email,phone} = req.body;
+ 
+    var f = new Date();
+    var fecha = f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+ 
+    const result = db.database().ref("Users").push({
+        Nombre:name,
+        Email: email,
+        Telefono: phone,
+        Fecha: fecha
+    })
+ 
+    res.json(result);
+ });
+
 module.exports = router;

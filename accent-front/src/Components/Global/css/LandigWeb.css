@@ -767,7 +767,7 @@ main{
 }
 
 .contenedor-formulario{
-    height: 500px;
+    height: 620px;
     width: 500px;
     border-radius: 50px;
     background-color: white;
@@ -788,6 +788,16 @@ main{
     width: 100%;
     padding: 10px;
     height: 65px;
+}
+
+.form-group select {
+    border-radius: 30px;
+    border: none;
+    background-color: #E6E6E6;
+    width: 100%;
+    padding: 10px;
+    height: 65px;
+
 }
 
 .contenedor-formulario form{
@@ -855,6 +865,7 @@ main{
     font-size:30px;
 	box-shadow: 2px 2px 3px #999;
     z-index:100;
+    cursor: pointer;
 }
 
 .my-float{
