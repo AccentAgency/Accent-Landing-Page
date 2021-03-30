@@ -298,7 +298,7 @@ class LandingPageWeb extends Component {
                 </div>
 
                 <div className="float-inf">
-                    <div className="" target="_blank" rel="noopener noreferrer" onClick={this.handleForm.bind(this, "Todas los servicios")}>
+                    <div className="" target="_blank" rel="noopener noreferrer" onClick={this.handleForm.bind(this, "Todos los servicios")}>
                         <i className="fa fa-info my-float"></i>
                     </div>
                 </div>
@@ -343,7 +343,7 @@ class LandingPageWeb extends Component {
                                     <option>Página de Ecommerce</option>
                                     <option>Embajador</option>
                                     <option>Fotografía</option>
-                                    <option>Todas los servicios</option>
+                                    <option>Todos los servicios</option>
                                 </select>
 
                             </div>
