@@ -10,7 +10,7 @@ import $ from 'jquery';
 import FadeIn from 'react-fade-in';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('G-G4BMGNDG8C');
+ReactGA.initialize('UA-193333945-1');
 class App extends Component {
   state = { loading: true };
 
