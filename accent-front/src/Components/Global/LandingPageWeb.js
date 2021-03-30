@@ -316,12 +316,16 @@ class LandingPageWeb extends Component {
 
                 </Modal>
                 <div id="Web" className="LandiPageWeb">
-                    <section id="hero" className="banner banner_web" style={{backgroundImage:`url(${banner1})`}}>
-                        <div className="hero-container" >
-                            <h2><b>Muéstrale a tus clientes</b> la información que necesitan de una forma <b>más profesional.</b></h2>
+                    <div id="hero" className="banner banner_web" style={{backgroundImage:`url(${banner1})`}}>
+                        <div className="contenedor-imagen">
+                            <article>
+                                <div className="texto">
+                                    <h2><b>Muéstrale a tus clientes</b> la información que necesitan de una forma <b>más profesional.</b></h2>
+                                </div>
+                            </article>
                             <button className="btn_info"  onClick={this.handleForm.bind(this, "Web")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
-                    </section>
+                    </div>
 
                     <main id="main">
                         <section id="about">
@@ -336,19 +340,19 @@ class LandingPageWeb extends Component {
 
                             <div className="page-image col-lg-12 col-md-12 col-sm-12">
                                 <div className="container-accent">
-                                    <div id="Pagina1" className="portafolio col-md-4">
+                                    <div id="Pagina1" className="portafolio col-md-4 col-sm-12">
                                         <div className="card">
                                             <ReactImageAppear placeholderClass="imagen" src={pagina1} alt="pagina" animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
 
-                                    <div id="Pagina2" className="portafolio col-md-4">
+                                    <div id="Pagina2" className="portafolio col-md-4 col-sm-12">
                                         <div className="card">
                                             <ReactImageAppear placeholderClass="imagen" src={pagina6} alt="pagina-2"  animationDuration="1s"></ReactImageAppear>
                                         </div>
                                     </div>
 
-                                    <div id="Pagina3" className="portafolio col-md-4">
+                                    <div id="Pagina3" className="portafolio col-md-4 col-sm-12">
                                         <div className="card">
                                             <ReactImageAppear placeholderClass="imagen" src={pagina7} alt="pagina-3" animationDuration="1s"></ReactImageAppear>
                                         </div>
@@ -357,7 +361,7 @@ class LandingPageWeb extends Component {
 
 
                                 <div className="container-accent">
-                                    <div id="Pagina1" className="portafolio col-md-5 offset-md-1">
+                                    <div id="Pagina1" className="portafolio col-md-5 offset-md-1 ">
                                         <div className="card2">
                                             <ReactImageAppear placeholderClass="imagen" src={pagina4} alt="pagina-4" animationDuration="1s"></ReactImageAppear>
                                         </div>
@@ -418,18 +422,23 @@ class LandingPageWeb extends Component {
 
                         </section>
                     </main>
+                
                 </div>
 
-
-
+                
                 <div id="RedesSociales" className="LandingRedesSociales">
                     <section id="hero" className="banner banner_social" style={{backgroundImage:`url(${banner2})`}}>
-                        <div className="hero-container" >
-                            <h2><b>Atrae más clientes</b> a través de tus <b>redes sociales.</b></h2>
-                            <button className="btn_info" onClick={this.handleForm.bind(this, "Social")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
+                        <div className="contenedor-imagen">
+                            <article>
+                                <div className="texto">
+                                    <h2><b>Atrae más clientes</b>a través de tus <b>redes sociales.</b></h2>
+                                </div>
+                            </article>
+                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Social")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
                     </section>
-
+      
+                    
                     <main id="main">
                         <section id="about">
                             <div className="container" data-aos="fade-up">
@@ -462,16 +471,12 @@ class LandingPageWeb extends Component {
                                                         </div>
 
                                                         <div className="estadisticas col-md-12">
-                                                            <div className="col-md-6">
-                                                            
-                                                             
-                                                            <div className="col-md-6">
+
+                                                            <div id="margen_xs" className="col-md-6">
                                                                 <h2 className="num">1.7K</h2>
                                                                 <p>Publicaciones</p>
                                                             </div>
                                                                 
-                                                           
-                                                            </div>
                                                             <div className="col-md-6 ot-counter">
                                                                 <h2>31K</h2>
 
@@ -682,10 +687,15 @@ class LandingPageWeb extends Component {
 
                 <div id="Ecommerce" className="LandingEcommerce">
                     <section id="hero" className="banner banner-ecom" style={{backgroundImage:`url(${banner3})`}}>
-                        <div className="hero-container" >
-                            <button className="btn_info" onClick={this.handleForm.bind(this, "Ecommerce")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
+                        <div className="contenedor-imagen">
+                            <article>
+                                <div className="texto">
+                                </div>
+                            </article>
+                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Ecommerce")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
                     </section>
+            
 
                     <main id="main">
                         <section id="about">
@@ -734,8 +744,12 @@ class LandingPageWeb extends Component {
 
                 <div id="Embajador" className="LandiEmbajador">
                     <section id="hero" className="banner banner_embajador" style={{backgroundImage:`url(${banner4})`}}>
-                        <div className="hero-container" >
-                            <button className="btn_info"  onClick={this.handleForm.bind(this, "Embajador")}>¡UNETE <span className="bolder">YA!</span></button>
+                        <div className="contenedor-imagen">
+                            <article>
+                                <div className="texto">
+                                </div>
+                            </article>
+                            <button className="btn_info" onClick={this.handleForm.bind(this,"Embajador")}>¡SOLICÍTALA <span className="bolder">YA!</span></button>
                         </div>
                     </section>
 
@@ -802,7 +816,8 @@ class LandingPageWeb extends Component {
                             </div>
                         </section>
                     </main>  
-                </div>      
+                </div>
+                  
                 <Footer></Footer>
             </div>
         )

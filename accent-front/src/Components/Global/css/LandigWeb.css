@@ -194,14 +194,24 @@ body {
   }
 
   #hero {
-    width: 100%;
-    height: 115vh;
     background-position: top center;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin-bottom: 100px;
   }
   
+    .contenedor-imagen article, article p {
+        display: block;
+        max-width: 40%;
+        text-align: left;
+
+    }
+
+    article{
+        margin: 1em 0 0 auto;
+        padding: 0;
+        margin-right: 10%;
+        margin-top: 0;
+    }
 
   .logoAccent{
       width: 200px;
@@ -275,14 +285,11 @@ body {
 }
 
 #hero h2 {
-    color: #eee;
-    bottom: 22%;
-    position: absolute;
-    left: 50%;
-    width: 40%;
-    font-size: 24px;
-    text-align: justify;
-    font-size: 30px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    font-size: 26px;
+    text-align: left;
+    padding-right: 40px;
 }
 
 #hero .hero-container {
@@ -298,9 +305,22 @@ body {
     text-align: center;
 }
 
-.banner_embajador{
-    height: 135vh !important;
+.about-container{
+    padding-top: 150px;
+    display: block;
+    margin: 0 auto;
 }
+
+.contenedor-imagen{
+    color: #FFFFFF;
+    padding: 720px 0 200px;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    text-align: left;
+}
+
+
 
   @media (max-width: 991px){
         .mobile-nav-toggle {
@@ -319,7 +339,7 @@ body {
         #header{
             margin: 0px;
             padding: 0px;
-            width: 91%;
+            width: 100%;
         }
 
         .align-items-center {
@@ -363,7 +383,6 @@ body {
 }
 
 .banner button{
-    position: absolute;
     bottom: 9%;
     background-color:#39b54a;
     border-radius: 60px;
@@ -374,7 +393,11 @@ body {
     padding-bottom: 19px;
     padding-left: 25px;
     padding-right: 25px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 10%), 0 1px 5px 0 rgb(0 0 0 / 10%), 0 1px 5px 0 rgb(0 0 0 / 10%), 0 1px 5px 0 rgb(0 0 0 / 10%);
+    margin-top: 7%;
 }
 
 .btn_info:hover {
@@ -892,6 +915,10 @@ main{
     margin-top: 21%;
 }
 
+#Embajador button{
+    margin-top: 14%;
+}
+
 .tit-embj-ben{
     font-family: 'CarmenSansBold';
     float: left;
@@ -1040,6 +1067,22 @@ main{
         width: 180px !important;
     }
 
+    .contenedor-imagen {
+        color: #FFFFFF;
+        padding: 110% 0 30%;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    article{
+        margin: 0 auto;
+    }
+
+    .contenedor-imagen article, article p {
+        max-width: 80%;
+    }
+
 
     #cont{
         margin-top: 0px;
@@ -1115,12 +1158,412 @@ main{
         margin: 0px !important;
     }
 
-    #hero h2{
-        width: 80%;
+    #hero h2 {
         text-align: center;
-        left: 10%;
-        bottom: 20%;
+        padding-right: 0px;
+        max-width: 100%;
     }
+
+
+    h2{
+        font-size: 16px !important;
+    }
+
+    .page-image{
+        display: none;
+    }
+
+    .galrjd{
+        height: 410px !important;
+
+    }
+
+    .hoBRNn{
+        height: 410px !important;
+   
+    }
+
+    .kPyZtq{
+        height: 410px !important;
+
+    }
+
+    #cont .gbgfMs {
+        height: 250px !important;
+    }
+
+    #contMobile .cukhLH{
+        height: 300px;
+    }
+ 
+    #contMobile .galrjd{
+        height: 300px !important;
+    }
+
+    .tarjeta-img{
+        height: 280px !important;
+        margin-top: 0%;
+        padding: 0px;
+    }
+
+    .Contenedor-page {
+        height: 280px;
+    }
+
+    .imagen_socialMedia{
+        width: 100%;
+        height: 150px;
+        float: left;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    .txt_information{
+        width: 100%;
+        padding-top: 10px;
+        height: 215px;
+    }
+
+    .CPV .logo_empresa {
+        width: 80px;
+        margin-top: -10px;
+    }
+
+    .CPV .txt_information{
+        padding-top: 0px;
+    }
+
+    .CPV .socialmedia span {
+        font-size: 7px;
+        margin-left: 1px;
+    }
+    
+    .CPV{
+        margin: 7px !important;
+    }
+
+    .logo_empresa {
+        margin-top: 10%;
+        width: 140px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .MovilPos .txt_information {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .socialmedia i {
+        color: #fff;
+        font-size: 12px;
+        border-radius: 999px;
+        background-color: #82039A;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        margin-left: 8px;
+    }
+
+    .socialmedia{
+        margin-top: 5px;
+        padding-left: 25px;
+
+    }
+
+    .estadisticas p{
+        font-size: 10px;
+    }
+
+    .socialmedia span{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .estadisticas{
+        margin-top: 12px;
+        margin-left: 0%;
+    }
+
+    .tarjeta-card{
+        height: 380px;
+        margin-top: 0px;
+    }
+
+    #RedesSociales .kPyZtq{
+        margin-top: 0px;
+    }
+
+    .Contenedor{
+        height: 380px;
+    }
+
+
+    .Servicios i {
+        color: #fff;
+        font-size: 14px;
+        border-radius: 999px;
+        background-color: #82039A;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 15px;
+    }
+
+    .pagina1{
+        background-image: url('../images/Ecommerce/Telefono/paginaTlf-1.png') !important;
+    }
+
+    
+    .pagina2{
+        background-image: url('../images/Ecommerce/Telefono/paginaTlf-2.png') !important;
+    }
+
+    .pagina3{
+        background-image: url('../images/Ecommerce/Telefono/paginaTlf-3.png') !important;
+    }
+
+    .Servicios{
+        display: inline;
+        
+    }
+
+    .icon-serv{
+        position: absolute;
+        margin-top: -20px;
+        left: 21%;
+        
+    }
+
+    #cont .hoBRNn{
+        height: 280px !important;
+        margin: 0px !important;
+    }
+
+    #cont .cukhLH {
+        margin: 0px !important;
+    }
+
+    #cont .galrjd{
+        height: 300px !important;
+    }
+
+    .footer-bottom .social-links a {
+        font-size: 25px !important;
+        margin-left: 14px;
+    }
+
+    .footer h3{
+        font-size: 20px;
+    }
+    
+    .footer-bottom p{
+        font-size: 16px;
+    }
+
+    #fila_footer{
+        width: 100%;
+    }
+
+    #footer-det{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .contenedor-formulario {
+        height: 400px;
+        width: 300px;
+        border-radius: 50px;
+        background-color: white;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .form-group input {
+        height: 45px;
+    }
+
+    .contenedor-formulario h4{
+        font-size: 18px;
+    }
+
+    #phone-embj .col-md-4{
+        width: 100% !important;
+    }
+
+    #phone-embj{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 20px;
+    }
+
+    .tit-embj{
+        font-size: 40px !important;
+        float: none;
+    }
+
+    .tit-embj h2{
+        text-align: center !important   ;
+    }
+
+    .icono img {
+        width: 150px;
+        padding-top: 20px;
+    }
+
+    .icono{
+        height: 190px;
+    }
+
+    .text-info h3 {
+        font-size: 18px;
+    }
+
+    .text-info {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .card-embj{
+        height: 340px;
+        margin-bottom: 0px;
+    }
+
+    .line{
+        height: 20px;
+    }
+
+    #second{
+        margin-top: 8%;
+    }
+
+    .tit-embj-ben{
+        font-size: 35px !important;
+        margin-top: 80px;
+        text-align: center;
+        align-items: center;
+        float: none;
+    }
+
+    .comentario{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #three{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 699px){
+
+    #contMobile{
+        display: block;
+    }
+
+    .centrado img{
+        width: 180px !important;
+    }
+
+    .contenedor-imagen {
+        color: #FFFFFF;
+        padding: 80% 0 30%;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    article{
+        margin: 0 auto;
+    }
+
+    .contenedor-imagen article, article p {
+        max-width: 80%;
+    }
+
+
+    #cont{
+        margin-top: 0px;
+    }
+
+    .banner_web{
+        background-image: url(../images/banner/cell3.png) !important;
+    }
+
+    .banner_social{
+        background-image: url(../images/banner/cell-redes.png) !important;
+    }
+    
+    .banner-ecom{
+        background-image: url(../images/banner/cell-ecommerce.png) !important;
+    }
+
+    .banner_embajador{
+        background-image: url(../images/banner/cell-embajador.png) !important;
+        height: 90vh !important;
+    }
+    
+
+    .logoAccent {
+        width: 150px;
+    }
+
+    #header{
+        height: 80px;
+        width: 100%;
+    }
+
+    .mobile-nav-toggle{
+        margin-top: 15px;
+    }
+
+
+    .mobile-nav-toggle{
+        height: 24px;
+    }
+
+    .social-links {
+        margin-left: 0%;
+    }
+
+    .social-links a{
+        color: #efc90a;
+    }
+
+    #hero{
+       height: 80vh;
+       margin-bottom: 60px;
+    }
+
+    #Embajador #hero{
+        margin-bottom: 0px !important;
+    }
+
+    #Embajador #about{
+        margin-top: 0%;
+    }
+
+    .banner button{
+        font-size: 15px;
+        bottom: 8%;
+    }
+
+    #Embajador .banner button{
+        bottom: 25%;
+    }
+
+    #contMobile .diULVL{
+        margin: 0px !important;
+    }
+
+    #hero h2 {
+        text-align: center;
+        padding-right: 0px;
+        max-width: 100%;
+    }
+
 
     h2{
         font-size: 16px !important;
@@ -1416,6 +1859,19 @@ main{
         background-image: url(../images/banner/cell3.png) !important;
     }
 
+    .contenedor-imagen {
+        padding: 340px 0 200px;
+        margin: 0 auto;
+    }
+
+    article{
+        margin: 0 auto;
+    }
+
+    .contenedor-imagen article, article p {
+        max-width: 80%;
+        text-align: center;
+    }
     
     .centrado img{
         width: 130px !important;
@@ -1473,9 +1929,9 @@ main{
     }
 
     #hero h2{
-        width: 48%;
+        width: 100%;
         text-align: center;
-        left: 27% !important;
+        padding-right: 0px;
     }
 
     h2{
@@ -1796,14 +2252,147 @@ main{
 
 }
 
+@media(min-width:700px) and (max-width:767px){
+    .galrjd{
+        height: 410px !important;
 
+    }
 
-@media (min-width: 768px) and (max-width: 800px){
+    .hoBRNn{
+        height: 410px !important;
+   
+    }
+
+    .kPyZtq{
+        height: 410px !important;
+
+    }
+
+    #cont .gbgfMs {
+        height: 250px !important;
+    }
+
+    #contMobile .cukhLH{
+        height: 300px;
+    }
+ 
+    #contMobile .galrjd{
+        height: 300px !important;
+    }
+
+    .tarjeta-img{
+        height: 280px !important;
+        margin-top: 0%;
+        padding: 0px;
+    }
+
+    .Contenedor-page {
+        height: 280px;
+    }
+
+    .imagen_socialMedia{
+        width: 100%;
+        height: 150px;
+        float: left;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    .txt_information{
+        width: 100%;
+        padding-top: 10px;
+        height: 215px;
+    }
+
+    .CPV .logo_empresa {
+        width: 80px;
+        margin-top: -10px;
+    }
+
+    .CPV .txt_information{
+        padding-top: 0px;
+    }
+
+    .CPV .socialmedia span {
+        font-size: 7px;
+        margin-left: 1px;
+    }
+    
+    .CPV{
+        margin: 7px !important;
+    }
+
+    .logo_empresa {
+        margin-top: 10%;
+        width: 140px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .MovilPos .txt_information {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .socialmedia i {
+        color: #fff;
+        font-size: 12px;
+        border-radius: 999px;
+        background-color: #82039A;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        margin-left: 8px;
+    }
+
+    .socialmedia{
+        margin-top: 5px;
+        padding-left: 35px;
+
+    }
+
+    .socialmedia span{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .estadisticas{
+        margin-top: 12px;
+        margin-left: 0%;
+    }
+
+    .tarjeta-card{
+        height: 380px;
+        margin-top: 0px;
+    }
+
+    #RedesSociales .kPyZtq{
+        margin-top: 0px;
+    }
+
+    .icon-serv {
+        position: absolute;
+        margin-top: -20px;
+        left: 30%;
+    }
+
+    .Servicios i {
+        color: #fff;
+        font-size: 14px;
+        border-radius: 999px;
+        background-color: #82039A;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width:768)and (max-width:800px){
     .imagen_socialMedia {
         width: 250px !important;
         height: 350px !important;
     }
-
     .txt_information{
         width: 255px;
     }
@@ -1814,11 +2403,7 @@ main{
         display: block;
         margin-top: 8%;
     }
-
-    .estadisticas h2 {
-        font-size: 25px;
-    }
-
+    
     .Servicios i {
         margin-left: 20px;
     }
@@ -1836,6 +2421,69 @@ main{
         margin: 0 auto;
         display: block;
     }
+
+
+}
+
+@media (min-width: 700px) and (max-width: 768px){
+
+    .page-image .col-md-4 {
+        width: 50%;
+        max-width: 50%;
+     
+    }
+
+    .page-image .col-md-5 {
+        width: 50%;
+        max-width: 50%;
+        margin-left: 0px;
+     
+    }
+
+    .card2{
+        height: 300px;
+    }
+
+    .card2 img{
+        height: 300px !important;
+    }
+
+    .banner_web{
+        background-image: url(../images/banner/tablet/bannerTablet.png) !important;
+    }
+
+    .banner_social{
+        background-image: url(../images/banner/tablet/bannerTabletred.png) !important;
+    }
+
+    .banner-ecom{
+        background-image: url(../images/banner/tablet/bannerTabletem.png) !important;
+    }
+
+    .banner_embajador{
+        background-image: url(../images/banner/tablet/bannerTabletemb.png) !important;
+    }
+
+    .contenedor-imagen {
+        padding: 440px 0 40px;
+    }
+
+
+    .contenedor-imagen article, article p {
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #hero h2 {
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .estadisticas h2 {
+        font-size: 25px;
+    }
+
 
     
     #phone-embj .col-md-4{
@@ -1933,12 +2581,21 @@ main{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1275px){
     #header{
         margin: 0px;
         padding: 0px;
         width: 100%;
     }
+
+    .contenedor-imagen {
+        padding: 42% 0 30%;
+    }
+
+    .contenedor-imagen article, article p {
+        max-width: 80%;
+    }
+
     .line{
         display: none;
     }
@@ -1981,6 +2638,9 @@ main{
     #hero h2{
         font-size: 20px !important;
         bottom: 32%;
+        padding-right: 0px;
+        padding-left: 50px;
+        text-align: center;
     }
 
     .banner button{
@@ -1995,7 +2655,7 @@ main{
     }
     
     .card{
-        height: auto;
+        height: 160px;
     }
 
     .card2 img {
@@ -2109,6 +2769,162 @@ main{
 	100% {
 		transform: rotate(-90deg);
 	}
+}
+
+@media (min-width:1276px) and (max-width:1400px){
+    #header{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .contenedor-imagen {
+        padding: 32% 0 30%;
+    }
+
+    .contenedor-imagen article, article p {
+        max-width: 80%;
+    }
+
+    .line{
+        display: none;
+    }
+    .banner_web{
+        background-image: url(../images/banner/tablet/table-web.png) !important;
+    }
+
+    .banner_social{
+        background-image: url(../images/banner/tablet/table-red.png) !important;
+    }
+
+    .banner-ecom{
+        background-image: url(../images/banner/tablet/table-banner1.png) !important;
+    }
+
+    .banner_embajador{
+        background-image: url(../images/banner/tablet/table-embajador.png) !important;
+    }
+
+    .banner_embajador {
+        height: 65vh !important;
+    }
+
+    #logo{
+        margin: 0px;
+    }
+
+    .navbar{
+        margin: 0px;
+    }
+
+    .social-links {
+        margin-left: 10%;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    #hero h2{
+        font-size: 20px !important;
+        bottom: 32%;
+        padding-right: 0px;
+        padding-left: 50px;
+        text-align: center;
+    }
+
+    .banner button{
+        bottom: 15%;
+    }
+
+    .card img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .card{
+        height: 160px;
+    }
+
+    .card2 img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card2{
+        height: auto;
+    }
+
+    .imagen_socialMedia {
+        width: 350px;
+    }
+
+    .footer{
+        height:70vh;
+    }
+
+    #phone-embj{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .tit-embj{
+        font-size: 40px !important;
+        float: none;
+    }
+
+    .tit-embj h2{
+        text-align: center !important   ;
+    }
+
+    .icono img {
+        width: 150px;
+        padding-top: 20px;
+        
+    }
+
+    #Ingresos .icono img{
+        padding-left: 10px;
+    }
+
+    .icono{
+        height: 160px;
+    }
+
+    .text-info h3 {
+        font-size: 24px;
+    }
+
+    .text-info {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #Oportunidad .text-info h3{
+        font-size: 24px;
+    }
+
+    #Empresarial .text-info h3{
+        font-size: 24px;
+    }
+
+    #Oportunidad .text-info{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #Empresarial .text-info{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-embj {
+        height: 420px;
+    }
 }
 
 
