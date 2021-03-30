@@ -8,11 +8,15 @@ import { Component } from 'react';
 import Loader from './Components/Global/Loader';
 import $ from 'jquery';
 import FadeIn from 'react-fade-in';
+import ReactGA from 'react-ga';
+
 
 class App extends Component {
   state = { loading: true };
 
   componentDidMount() {
+    ReactGA.initialize('G-G4BMGNDG8C');
+    ReactGA.pageview('/');
     setTimeout(
         function() {
             this.setState({ loading: false });
@@ -22,6 +26,7 @@ class App extends Component {
         5000
     );
   }
+
 
   render(){
     if (this.state.loading) return <Loader />;

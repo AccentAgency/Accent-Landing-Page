@@ -12,7 +12,7 @@ import config from './config/config';
 import axios from "axios";
 import swal from 'sweetalert';
 import * as emailjs from 'emailjs-com';
-import ReactGA from 'react-ga';
+
 
 import ReactImageAppear from 'react-image-appear';
 import { BackgroundImage } from 'react-image-and-background-image-fade'
@@ -274,14 +274,9 @@ class LandingPageWeb extends Component {
         })
     }
 
-    initializeReactGA () { 
-        ReactGA.initialize ('G-0639NNB5RK'); 
-        ReactGA.pageview('/'); 
-    }
 
     componentDidMount = () =>{
         this.scroll();
-        this.initializeReactGA();
     }
     
 
