@@ -36,6 +36,7 @@ class App extends Component {
         <FadeIn>
           <Header></Header>
           <Route path='/' component={LandingWeb}></Route>
+          
         </FadeIn>
       </Router>
     );
